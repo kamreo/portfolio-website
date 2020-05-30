@@ -68,7 +68,6 @@ body{
     text-align: center;
     font-weight: 700;
     font-size: 3rem;
-  
 
 }
 
@@ -87,7 +86,7 @@ body{
   margin-left: auto;
   margin-right: auto;
   width: 80rem;
-  width: 100%;
+  max-width: 100%;
 }
 
 
