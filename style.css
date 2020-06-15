@@ -62,6 +62,13 @@ body{
 
 .btn-lg{
   border-width: medium;
+  margin:1.5rem auto;
+  
+}
+
+.narrow{
+  width: 75%;
+  padding-top: 2rem;
 }
 
 .heading{
@@ -70,7 +77,23 @@ body{
     font-size: 3rem;
 
 }
+.jumbotron{
+  margin-bottom: 0px !important;
+}
 
+.heading-underline{
+  width: 7rem;
+  height: 0.3rem;
+  background-color:rgb(79, 207, 132);
+  margin: 2rem auto 2rem;
+  
+}
+.projects-heading{
+  text-align: center;
+  font-weight: 700;
+  font-size: 3rem;
+  
+}
 .photo{
   border-radius: 50%;
   display: block;
@@ -81,15 +104,62 @@ body{
   max-width: 100%;
 }
 
+.project-photo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  height: auto;
+  max-width: 100%;
+  padding-bottom: 2rem;
+  
+
+}
+
 .about-text{
-  font-size: 1.5rem;
+  font-size: 1.48rem;
   margin-left: auto;
   margin-right: auto;
   width: 80rem;
   max-width: 100%;
+  padding-bottom: 5rem;
+}
+.project-heading{
+  color:rgb(79, 207, 132);
 }
 
+.project{
+  padding-bottom: 5rem;
+   font-size: 1.1rem;
+}
 
+footer{
+  background-color: #40474e;
+  color: white;
+  padding: 2rem 0 2rem;
+  
+}
+
+footer img{
+  height: 3rem;
+  margin: 1.5rem 0;
+  margin-right: 2rem;
+
+}
+
+footer a{
+  color: white;
+}
+
+footer svg.svg-inline--fa{
+  font-size: 1.6rem;
+  margin: 1.2rem .5rem 0 0;
+}
+
+footer svg.svg-inline--fa:hover{
+  color: rgb(79, 207, 132)!important;
+  
+}
 
 
 
