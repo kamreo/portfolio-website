@@ -1,100 +1,95 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
 
-body{
+body {
   overflow-x: hidden;
-  font-family: 'Lato',  sans-serif;
+  font-family: "Lato", sans-serif;
   color: #505962;
-
 }
 
 /*--- Navigation --*/
-.navbar{
+.navbar {
   text-transform: uppercase;
   font-weight: 700;
-  font-size: .9rem;
-  letter-spacing: .1rem;
-  background:rgba(0, 0, 0, 0.6)!important ;
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+  background: rgba(0, 0, 0, 0.6) !important ;
 }
 
-.navbar-brand img{
-  height:2rem;
+.navbar-brand img {
+  height: 2rem;
 }
 
-.navbar-nav li{
-  padding-right: .7rem;
+.navbar-nav li {
+  padding-right: 0.7rem;
 }
 
-.navbar-dark .navbar-nav .nav-link{
+.navbar-dark .navbar-nav .nav-link {
   color: white;
-  padding-top: .8rem;
+  padding-top: 0.8rem;
 }
 
 .navbar-dark .navbar-nav .nav-link.active,
-.navbar-dark .navbar-nav .nav-link:hover{
-  color:rgb(79, 207, 132);
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: rgb(79, 207, 132);
 }
 
 /*--- Landing Page --*/
-.home-inner{
+.home-inner {
   background-image: url(img/galaxy.jpg);
 }
-.caption{
+.caption {
   width: 100%;
   max-width: 100%;
   position: absolute;
-  top:38%;
+  top: 38%;
   z-index: 1;
   color: white;
 }
 
-.caption h1{
+.caption h1 {
   font-size: 3.8rem;
   font-weight: 700;
-  letter-spacing: .3rem;
-  text-shadow: .1rem .1rem .8rem black;
+  letter-spacing: 0.3rem;
+  text-shadow: 0.1rem 0.1rem 0.8rem black;
   padding-bottom: 1rem;
 }
-.caption h3{
+.caption h3 {
   font-size: 2rem;
-  text-shadow:.1rem .1rem .5rem black;
+  text-shadow: 0.1rem 0.1rem 0.5rem black;
   padding-bottom: 1.6rem;
 }
 
-.btn-lg{
+.btn-lg {
   border-width: medium;
-  margin:1.5rem auto;
-  
+  margin: 1.5rem auto;
 }
 
-.narrow{
+.narrow {
   width: 75%;
   padding-top: 2rem;
 }
 
-.heading{
-    text-align: center;
-    font-weight: 700;
-    font-size: 3rem;
-
-}
-.jumbotron{
-  margin-bottom: 0px !important;
-}
-
-.heading-underline{
-  width: 7rem;
-  height: 0.3rem;
-  background-color:rgb(79, 207, 132);
-  margin: 2rem auto 2rem;
-  
-}
-.projects-heading{
+.heading {
   text-align: center;
   font-weight: 700;
   font-size: 3rem;
-  
 }
-.photo{
+.jumbotron {
+  margin-bottom: 0px !important;
+}
+
+.heading-underline {
+  width: 7rem;
+  height: 0.3rem;
+  background-color: rgb(79, 207, 132);
+  margin: 2rem auto 2rem;
+}
+.projects-heading {
+  text-align: center;
+  font-weight: 700;
+  font-size: 3rem;
+}
+.photo {
   border-radius: 50%;
   display: block;
   margin-left: auto;
@@ -104,19 +99,21 @@ body{
   max-width: 100%;
 }
 
-.project-photo{
+.project-photo {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 400px;
-  height: auto;
+  height: 280px;
   max-width: 100%;
   padding-bottom: 2rem;
-  
-
 }
 
-.about-text{
+.project-photo:hover {
+  transform: scale(1.05);
+}
+
+.about-text {
   font-size: 1.48rem;
   margin-left: auto;
   margin-right: auto;
@@ -124,80 +121,39 @@ body{
   max-width: 100%;
   padding-bottom: 5rem;
 }
-.project-heading{
-  color:rgb(79, 207, 132);
+.project-heading {
+  color: rgb(79, 207, 132);
 }
 
-.project{
+.project {
   padding-bottom: 5rem;
-   font-size: 1.1rem;
+  font-size: 1.1rem;
 }
 
-footer{
+footer {
   background-color: #40474e;
   color: white;
   padding: 2rem 0 2rem;
-  
 }
 
-footer img{
+footer img {
   height: 3rem;
   margin: 1.5rem 0;
   margin-right: 2rem;
-
 }
 
-footer a{
+footer a {
   color: white;
 }
 
-footer svg.svg-inline--fa{
+footer svg.svg-inline--fa {
   font-size: 1.6rem;
-  margin: 1.2rem .5rem 0 0;
+  margin: 1.2rem 0.5rem 0 0;
 }
 
-footer svg.svg-inline--fa:hover{
-  color: rgb(79, 207, 132)!important;
-  
+footer svg.svg-inline--fa:hover {
+  color: rgb(79, 207, 132) !important;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .narrow {
   width: 75%;
@@ -205,18 +161,18 @@ footer svg.svg-inline--fa:hover{
   padding-top: 2rem;
 }
 .narrow h1 {
-    font-size: 2.4rem;
+  font-size: 2.4rem;
 }
 
 .btn-secondary {
   border-width: medium;
   border-radius: 0;
-  padding: .6rem 1.2rem;
+  padding: 0.6rem 1.2rem;
   font-size: 1.2rem;
   text-transform: uppercase;
   margin: 1rem;
-  border-color: #1EBBA3;
-  background-color: #1EBBA3;
+  border-color: #1ebba3;
+  background-color: #1ebba3;
   color: white;
 }
 .btn-secondary:hover,
@@ -225,7 +181,6 @@ footer svg.svg-inline--fa:hover{
   background-color: #189582;
   color: white;
 }
-
 
 /*============ BOOTSTRAP BREAK POINTS:
 

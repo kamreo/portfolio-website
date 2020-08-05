@@ -1,200 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Kamreo Portfolio Website</title>
-	<link rel="stylesheet" href="bootstrap-4.1.3-dist/css/bootstrap.min.css">
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="css/fixed.css">
-</head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kamreo Portfolio Website</title>
+    <link rel="stylesheet" href="bootstrap-4.1.3-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/fixed.css" />
+  </head>
 
-<body data-spy="scroll" data-target="#navabarResponsive">
-	<!--- Start Home Section -->
-	<div id="home">
-		<!-- Navigation -->
-		<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" >
-			<a class="navbar-brand" href="index.html"><img src="img/logo.png"></a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-				<span class="navbar-toggler-icon"></span>
-			</button>
+  <body data-spy="scroll" data-target="#navabarResponsive">
+    <!--- home section -->
+    <div id="home">
+      <!-- navigation -->
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="index.html"><img src="img/logo.png" /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-			<div class="collapse navbar-collapse" id="navbarResponsive">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item">
-						<a class="nav-link" href="#home">Home</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#about">About</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#projects">Projects</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#contact">Contact</a>
-					</li>
-				</ul>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!--- landing page section -->
+    <div class="landing">
+      <div class="home-wrap">
+        <div class="home-inner"></div>
+      </div>
+    </div>
+    <div class="caption text-center">
+      <h1>Hi, my name is Kamil!</h1>
+      <h3>Welcome to my Portfolio Website</h3>
+      <a class="btn btn-outline-light btn-lg" href="#about">Get started</a>
+    </div>
 
-			</div>
-		</nav>
-	</div>
-	<!--- Start Landing Page Section -->
-	<div class="landing">
-		<div class="home-wrap">
-			<div class="home-inner">
+    <!--- about section -->
+    <div id="about" class="offset">
+      <div class="narrow">
+        <div class="narrow">
+          <div class="photo">
+            <img class="photo" src="img/my_photo.jpg" />
+          </div>
 
-			</div>
-		</div>
-	</div>
-	<div class="caption text-center">
-		<h1>Hi, my name is Kamil!</h1>
-		<h3>Welcome to my Portfolio Website</h3>
-		<a class="btn btn-outline-light btn-lg" href="#about">Get started</a>
-	</div>
-	<!--- End Landing Page Section -->
-	<!--- End Home Section -->
-	<!--- Start About Section -->
-	<div id="about" class="offset">
-	
-		<div class="narrow">
-			<div class="narrow">
-				<div class="photo">
-					<img class="photo" src="img/my_photo.jpg">
-				</div>
-				
-				<div class="col-12">
-					<h3 class="heading">About me</h3>
-					<div class="heading-underline"></div>
-				</div>
-				
-				<div class="row text-center">
-					<div class="col-md-12">
-					<div class="about-text">
-						I'm a computer science student based in Katowice 
-						and I simply love programming. I focus on web development, mainly on backend.
-						I fell in love with Django framework and
-						I would love to use my skills in commercial projects. Take a look at what
-						I've created so far below!
-					</div>
-					</div>
-				</div>	
-				
-			</div>
-		</div>
-		
-	</div>
-	<!--- End About Section -->
-	<!--- Start Projects Section -->
-	<div id="projects" class="offset">
-		<div class="jumbotron">
-			<div class=" col-12">
-				<h3 class="projects-heading">My projects</h3>	
-				<div class="heading-underline"></div>
-			</div>
-			<div class="row text-center">
-				<div class="col-md-4">
-					<div class="project">
-						<!--space for image with project -->
-						<div class="project-photo">
-							<img class="project-photo" src="img/project.gif">
-						</div>
-						<h3 class="project-heading">Project 1</h3>
-						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-							Expedita, ex omnis perspiciatis quis nisi voluptates provident beatae tempora commodi 
-							ratione. Fugiat inventore magnam alias eveniet totam nobis repellendus animi sequi.
-						</p>
-					</div>
-					<div class="project">
-						<div class="project-photo">
-							<img class="project-photo" src="img/project.gif">
-						</div>
-						<h3 class="project-heading">Project 4</h3>
-						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-							Expedita, ex omnis perspiciatis quis nisi voluptates provident beatae tempora commodi
-							ratione. Fugiat inventore magnam alias eveniet totam nobis repellendus animi sequi.
-						</p>
-					</div>
-					
-				</div>
-				<div class="col-md-4">
-					<div class="project">
-						<!--space for image with project -->
-						<div class="project-photo">
-							<img class="project-photo" src="img/project.gif">
-						</div>
-						<h3 class="project-heading">Project 1</h3>
-						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-							Expedita, ex omnis perspiciatis quis nisi voluptates provident beatae tempora commodi
-							ratione. Fugiat inventore magnam alias eveniet totam nobis repellendus animi sequi.
-						</p>
-					</div>
-					<div class="project">
-						<div class="project-photo">
-							<img class="project-photo" src="img/project.gif">
-						</div>
-						<h3 class="project-heading">Project 4</h3>
-						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-							Expedita, ex omnis perspiciatis quis nisi voluptates provident beatae tempora commodi
-							ratione. Fugiat inventore magnam alias eveniet totam nobis repellendus animi sequi.
-						</p>
-					</div>
-				
-				</div>
-				<div class="col-md-4">
-					<div class="project">
-						<!--space for image with project -->
-						<div class="project-photo">
-							<img class="project-photo" src="img/project.gif">
-						</div>
-						<h3 class="project-heading">Project 1</h3>
-						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-							Expedita, ex omnis perspiciatis quis nisi voluptates provident beatae tempora commodi
-							ratione. Fugiat inventore magnam alias eveniet totam nobis repellendus animi sequi.
-						</p>
-					</div>
-					<div class="project">
-						<div class="project-photo">
-							<img class="project-photo" src="img/project.gif">
-						</div>
-						<h3 class="project-heading">Project 4</h3>
-						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-							Expedita, ex omnis perspiciatis quis nisi voluptates provident beatae tempora commodi
-							ratione. Fugiat inventore magnam alias eveniet totam nobis repellendus animi sequi.
-						</p>
-					</div>
-				
-				</div>
-			</div>
-		</div>
-		
-	</div>
-	<!--- End Projects Section -->
-	<!--- Start Contact Section -->
-	<div id="contact" class="offset">
-		<footer>
-			<div class="row justify-content-center">
-				<div class="col-md-5 text-center">
-					<img src="img/logo.png">
-					<br>
-					<strong>Contact Info</strong>
-					<p>736-764-035<br>kamil.jonak@protonmail.com</p>
-					<a href="https://pl.linkedin.com/in/kamil-jonak-650b58178" target="_blank"><i class="fab fa-linkedin"></i></a>
-					<a href="https://github.com/kamreo" target="_blank"><i class="fab fa-github-square"></i></a>
-					<a href="https://www.facebook.com/kamil.jonak.3" target="_blank"><i class="fab fa-facebook-square"></i></a>
-				</div>
-			</div>
-		</footer>
-	</div>
-	<!--- End Contact Section -->
+          <div class="col-12">
+            <h3 class="heading">About me</h3>
+            <div class="heading-underline"></div>
+          </div>
 
-	<!--- Script Source Files -->
-	<script src="js/jquery-3.3.1.min.js"></script>
-	<script src="bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
-	<script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
-	<!--- End of Script Source Files -->
+          <div class="row text-center">
+            <div class="col-md-12">
+              <div class="about-text">
+                I'm a computer science student based in Katowice and I simply
+                love programming. I focus on web development, mainly on backend.
+                I fell in love with Django framework and I would love to use my
+                skills in commercial projects. Take a look at what I've created
+                so far below!
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-</body>
+    <!--- projects section -->
+    <div id="projects" class="offset">
+      <div class="jumbotron">
+        <div class="col-12">
+          <h3 class="projects-heading">My projects</h3>
+          <div class="heading-underline"></div>
+        </div>
+        <div class="row text-center">
+          <div class="col-xl-4 col-lg-6 col-md-12">
+            <div class="project">
+              <div class="project-photo">
+                <a href="http://kamreo.github.io/todo-list/" target="_blank"
+                  ><img class="project-photo" src="img/project1.PNG"
+                /></a>
+              </div>
+              <h3 class="project-heading">Todo list</h3>
+              <p>
+                A custom todo list with a timer implemented to help you manage
+                time. Added todo tasks are saved in local storage and retrieved
+                after refreshing the website. Project created with HTML, CSS and
+                JQuery.
+              </p>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-6 col-md-12">
+            <div class="project">
+              <div class="project-photo">
+                <a
+                  href="http://kamreo.github.io/gradient-background-generator/"
+                  target="_blank"
+                  ><img class="project-photo" src="img/project2.PNG"
+                /></a>
+              </div>
+              <h3 class="project-heading">Gradient generator</h3>
+              <p>
+                A website, that allows you to generate gradient background. If
+                you don't feel creative you can generate it randomly and pick
+                your favourite one!
+              </p>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-6 col-md-12">
+            <div class="project">
+              <div class="project-photo">
+                <a
+                  href="https://kamreo.github.io/movie-booking-website/"
+                  target="_blank"
+                  ><img class="project-photo" src="img/project5.PNG"
+                /></a>
+              </div>
+              <h3 class="project-heading">Movie booking website</h3>
+              <p>
+                Movie booking website where you can choose movie and seats and
+                it counts the total price for the tickets. After refreshing the
+                website it remembers, which seats you chose.
+              </p>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-6 col-md-12">
+            <div class="project">
+              <div class="project-photo">
+                <a href="kamreo.github.io/video-player/" target="_blank">
+                  <img class="project-photo" src="img/project3.PNG" />
+                </a>
+              </div>
+              <h3 class="project-heading">Custom video player</h3>
+              <p>
+                A custom video player with functionality implemented in
+                javascript. Icons taken from font awesome.
+              </p>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-6 col-md-12">
+            <div class="project">
+              <div class="project-photo">
+                <a href="https://kamreo.github.io/Webmap/" target="_blank"
+                  ><img class="project-photo" src="img/project4.PNG"
+                /></a>
+              </div>
+              <h3 class="project-heading">Webmap</h3>
+              <p>
+                A webmap created with python and folium library. You can check
+                the population of particular countries and height of volcanoes
+                in USA when you click on them. Data is taken from json files in
+                project directory
+              </p>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-6 col-md-12">
+            <div class="project">
+              <div class="project-photo">
+                <img class="project-photo" src="img/project.gif" />
+              </div>
+              <h3 class="project-heading">Blog application (In progress)</h3>
+              <p>
+                It's a blog site, where you can register and add blog posts on
+                your timeline. Users can also manage their profiles, e.g. update
+                their profile picture. App was created using django framework.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--- contact section -->
+    <div id="contact" class="offset">
+      <footer>
+        <div class="row justify-content-center">
+          <div class="col-md-5 text-center">
+            <img src="img/logo.png" />
+            <br />
+            <strong>Contact Info</strong>
+            <p>736-764-035<br />kamil.jonak@protonmail.com</p>
+            <a
+              href="https://pl.linkedin.com/in/kamil-jonak-650b58178"
+              target="_blank"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="https://github.com/kamreo" target="_blank"
+              ><i class="fab fa-github-square"></i
+            ></a>
+            <a href="https://www.facebook.com/kamil.jonak.3" target="_blank"
+              ><i class="fab fa-facebook-square"></i
+            ></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>
-
-
-
