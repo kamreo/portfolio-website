@@ -1,14 +1,31 @@
-(function () {
-    var windowH = $(window).height(),
-        docEl = $(document),
-        aboutPage = $('#about'),
-        homePage = $('#home'),
-        btn = $('#slide'),
-        animSpeed = 500;
+$(document).ready(function () {
+    $('.button-about').click(function () {
+        slideToElement('#about');
 
-    $('#slide').click((e) => {
-        aboutPage.show();
+    })
+    $('.button-home').click(function () {
+        slideToElement('#home');
+
+    })
+    $('.button-projects').click(function () {
+        slideToElement('#projects');
+
+    })
+    $('.button-contact').click(function () {
+        slideToElement('#contact');
 
     })
 
-})();
+
+})
+
+
+
+function slideToElement(targetClass) {
+
+    $('html,body').animate({
+            scrollTop: $(targetClass).offset().top
+        },
+        'slow');
+
+}

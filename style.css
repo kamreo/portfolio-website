@@ -12,7 +12,7 @@ body {
   font-weight: 700;
   font-size: 0.9rem;
   letter-spacing: 0.1rem;
-  background: rgba(0, 0, 0, 0.6) !important ;
+  background: rgba(0, 0, 0, 0.6) !important;
 }
 
 .navbar-brand img {
@@ -21,6 +21,7 @@ body {
 
 .navbar-nav li {
   padding-right: 0.7rem;
+  cursor: pointer;
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -37,6 +38,7 @@ body {
 .home-inner {
   background-image: url(img/galaxy.jpg);
 }
+
 .caption {
   width: 100%;
   max-width: 100%;
@@ -53,6 +55,7 @@ body {
   text-shadow: 0.1rem 0.1rem 0.8rem black;
   padding-bottom: 1rem;
 }
+
 .caption h3 {
   font-size: 2rem;
   text-shadow: 0.1rem 0.1rem 0.5rem black;
@@ -74,6 +77,7 @@ body {
   font-weight: 700;
   font-size: 3rem;
 }
+
 .jumbotron {
   margin-bottom: 0px !important;
 }
@@ -84,11 +88,13 @@ body {
   background-color: rgb(79, 207, 132);
   margin: 2rem auto 2rem;
 }
+
 .projects-heading {
   text-align: center;
   font-weight: 700;
   font-size: 3rem;
 }
+
 .photo {
   border-radius: 50%;
   display: block;
@@ -121,6 +127,7 @@ body {
   max-width: 100%;
   padding-bottom: 5rem;
 }
+
 .project-heading {
   color: rgb(79, 207, 132);
 }
@@ -160,6 +167,7 @@ footer svg.svg-inline--fa:hover {
   margin: 1.5rem auto;
   padding-top: 2rem;
 }
+
 .narrow h1 {
   font-size: 2.4rem;
 }
@@ -175,6 +183,7 @@ footer svg.svg-inline--fa:hover {
   background-color: #1ebba3;
   color: white;
 }
+
 .btn-secondary:hover,
 .btn-secondary:focus {
   border-color: #189582;
