@@ -130,12 +130,22 @@ body {
   margin-right: auto;
   width: 400px;
   height: 280px;
-  max-width: 100%;
+  max-width: 480px;
   padding-bottom: 2rem;
+  
+}
+.project-photo-container {
+  overflow: hidden;
+}
+
+.project-photo-container img{
+  transition: transform .6s ease;
 }
 
 .project-photo:hover {
   opacity: 0.7;
+  transform: scale(1.1);
+  
 }
 
 .about-text {
@@ -298,6 +308,7 @@ footer svg.svg-inline--fa:hover {
 .project-item{
   border: 1px solid rgb(110, 152, 219) !important;
   max-height:555px;
+  min-height:555px;
   margin: 20px;
   background-color:white;
   border-radius: 10px;
@@ -318,6 +329,19 @@ a:link{
 a .fa-github{
   color:rgb(99, 81, 200);
 }
+
+.no-wrap {
+  white-space:nowrap;
+  overflow-x:auto;
+  overflow-y:hidden;
+}
+
+.overflow-y{
+   overflow-y:auto;
+   overflow-x:hidden;
+}
+
+
 /*============ BOOTSTRAP BREAK POINTS:
 
 Extra small (xs) devices (portrait phones, less than 576px)
