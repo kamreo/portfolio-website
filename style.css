@@ -310,6 +310,14 @@ footer svg.svg-inline--fa:hover {
   margin:0 auto;
 
 }
+
+a:link{
+  text-decoration: none;
+}
+
+a .fa-github{
+  color:rgb(99, 81, 200);
+}
 /*============ BOOTSTRAP BREAK POINTS:
 
 Extra small (xs) devices (portrait phones, less than 576px)
