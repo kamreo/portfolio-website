@@ -193,8 +193,6 @@
     </div>
   </div>
 
- 
-
   <!--- contact section -->
   <div id="contact" class="offset">
     <footer>
@@ -202,16 +200,33 @@
         <div class="col-md-5 text-center">
            
           <div class="d-flex flex-column">
-            <div class="form-group">
+            <div class="form-group h2" >
                <strong>Message me!</strong>
             </div>
-              <form class="" action="post" action="contact.php">
-                <div style="padding-bottom: 20px;"><input class="form-control" type="text" name="name" placeholder="Full name" ></div>
-                <div style="padding-bottom: 20px;"><input class="form-control" type="email" name="mail" placeholder="Your email address" ></div>
-                <div style="padding-bottom: 20px;"><input class="form-control" type="text" name="subject" placeholder="Subject" > </div>
-                <div style="padding-bottom: 20px;"><textarea class="form-control"  name="message" placeholder="Message"></textarea></div>
+            <div style="border-bottom: 3px solid white; padding-bottom: 10px;"></div>
+          
+              <form style="padding-top: 15px;" id="gform" name="gform" target="hidden_iframe" onsubmit="submitted=true;" action="https://docs.google.com/forms/d/e/1FAIpQLScuOHJDXaxeCt3tdbt---eFKqONRpg1xo6izERVU1yYh3lLVQ/formResponse?" action="contact.php">
+                
+                <div style="padding-bottom: 20px;">
+                  <label for="entry.389421918">Full name</label>
+                  <input class="form-control" type="text" id="entry.389421918" name="entry.389421918" >
+                </div>
+                <div style="padding-bottom: 20px;">
+                  <label for="entry.2072547798">Your email address</label>
+                  <input id="entry.2072547798" name="entry.2072547798" class="form-control" type="email" name="mail"  >
+                </div>
+                <div style="padding-bottom: 20px;">
+                  <label for="entry.139029487">Subject</label>
+                  <input class="form-control" name="entry.139029487" id="entry.139029487" type="text" name="subject"  >
+                 </div>
+                <div style="padding-bottom: 20px;">
+                  <label for="entry.193744827">Message</label>
+                  <textarea id="entry.193744827" class="form-control"  name="entry.193744827" ></textarea>
+                </div>
                 <button class="btn btn-primary" style="background: rgb(18, 65, 71); border: 1px solid rgb(18, 65, 71);" type="submit" name="submit">Send Mail</button>
               </form>
+
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display: none;" ></iframe>
 
           </div>
             <div>
