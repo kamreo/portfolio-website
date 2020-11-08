@@ -32,7 +32,7 @@ function slideToElement(targetClass) {
 
 jQuery('#gform').on('submit', function(e){
       console.log('sdasd');
-      jQuery('#gform').append('<div style="padding-top:20px;" class="alert alert-success" role="alert">Your submission has been processed!</div>');
+      jQuery('.message-box').append('<div class="alert alert-success" role="alert">Your submission has been processed!</div>');
 });
 
 
