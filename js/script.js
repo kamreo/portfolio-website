@@ -15,7 +15,10 @@ $(document).ready(function () {
         slideToElement('#contact');
 
     })
+    $('.button-skills').click(function () {
+        slideToElement('#skills');
 
+    })
 
 })
 
@@ -31,7 +34,6 @@ function slideToElement(targetClass) {
 }
 
 jQuery('#gform').on('submit', function(e){
-      console.log('sdasd');
       jQuery('.message-box').append('<div class="alert alert-success" role="alert">Your submission has been processed!</div>');
 });
 

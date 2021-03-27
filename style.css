@@ -38,7 +38,7 @@ body {
 
 /*--- Landing Page --*/
 .home-inner {
-  background-image: url(img/galaxy.jpg);
+  background-image: url(img/background.jpg);
 }
 
 .caption {
@@ -107,16 +107,20 @@ body {
   font-weight: 700;
   font-size: 3rem;
 
+
 }
 
 .photo {
-  justify-content: center!important;
-  text-align: center!important;
-  border-radius: 50%;
-  width: 350px;
-  margin:0 auto;
-  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin:auto;
+  width: 400px;
+  border-radius:5%;
+  -moz-box-shadow: 10px 10px 5px #ccc;
+  -webkit-box-shadow: 10px 10px 5px #ccc;
+  box-shadow: 10px 10px 5px #ccc;
 }
+
 
 .description-about-content{
   justify-content: center;
@@ -302,16 +306,25 @@ footer svg.svg-inline--fa:hover {
   }
 }
 
-.projects-content{
+.projects-content, .skills-content{
   padding-top: 60px;
    align-items:center;
    justify-content:center;
 }
 
 .project-item{
-  border: 1px solid rgb(110, 152, 219) !important;
+  border: 3px solid rgb(110, 152, 219) !important;
   max-height:555px;
   min-height:555px;
+  margin: 20px;
+  background-color:white;
+  border-radius: 10px;
+
+}
+
+.skill-item{
+  max-height:650px;
+  min-height:650px;
   margin: 20px;
   background-color:white;
   border-radius: 10px;
@@ -347,24 +360,17 @@ a .fa-github{
 .project-description{
   max-height: 175px;
   overflow-y: auto;
-
 }
-*/
-/*============ BOOTSTRAP BREAK POINTS:
 
-Extra small (xs) devices (portrait phones, less than 576px)
-No media query since this is the default in Bootstrap
+.button-down{
+  transform: scale(2);
+}
 
-Small (sm) devices (landscape phones, 576px and up)
-@media (min-width: 576px) { ... }
+.button-down:hover{
+  transform: scale(2.2);
+  color: rgb(110, 152, 219);
+}
 
-Medium (md) devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
-
-Large (lg) devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
-
-Extra (xl) large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
-
-=============*/
+.tech-item img{
+  width: 100px;
+}
