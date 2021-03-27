@@ -114,7 +114,7 @@ body {
   justify-content: center;
   align-items: center;
   margin:auto;
-  width: 400px;
+  width: 100%;
   border-radius:5%;
   -moz-box-shadow: 10px 10px 5px #ccc;
   -webkit-box-shadow: 10px 10px 5px #ccc;
@@ -125,7 +125,7 @@ body {
 .description-about-content{
   justify-content: center;
   align-items: center;
-  margin:auto;
+  word-wrap: break-word;
 }
 
 .project-photo {
@@ -308,8 +308,7 @@ footer svg.svg-inline--fa:hover {
 
 .projects-content, .skills-content{
   padding-top: 60px;
-   align-items:center;
-   justify-content:center;
+  justify-content:center;
 }
 
 .project-item{
@@ -323,12 +322,14 @@ footer svg.svg-inline--fa:hover {
 }
 
 .skill-item{
-  max-height:650px;
-  min-height:650px;
+  max-height:700px;
   margin: 20px;
   background-color:white;
   border-radius: 10px;
+}
 
+.skill-item h3{
+  font-weight: bold;
 }
 
 .about-content{
@@ -363,14 +364,38 @@ a .fa-github{
 }
 
 .button-down{
-  transform: scale(2);
+  font-size: 30px;
 }
 
 .button-down:hover{
-  transform: scale(2.2);
-  color: rgb(110, 152, 219);
+    color: rgb(110, 152, 219);
+    font-size: 40px;
 }
 
 .tech-item img{
   width: 100px;
 }
+
+
+@media screen and (max-width : 500px)
+{
+  .about-text
+  {
+    font-size: 18px!important;
+  }
+}
+
+
+@media screen and (max-width : 500px)
+{
+  .about-text
+  {
+    font-size: 18px!important;
+  }
+}
+
+.emoji{
+  font-size: 50px;
+}
+
+
