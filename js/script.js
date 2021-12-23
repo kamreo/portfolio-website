@@ -20,9 +20,7 @@ $(document).ready(function () {
 
     })
 
-})
-
-
+});
 
 function slideToElement(targetClass) {
 
@@ -33,12 +31,18 @@ function slideToElement(targetClass) {
 
 }
 
-jQuery('#gform').on('submit', function(e){
-      jQuery('.message-box').append('<div class="alert alert-success" role="alert">Your submission has been processed!</div>');
+$('#gform').on('submit', function(e){
+    $('.message-box').empty();
+    let inputs = $('#gform .form-control');
+    if(!$(inputs).val()){
+        $('.message-box').append('<div class="alert alert-danger" role="alert">Your submission is invalid!</div>');
+    }else{
+        $('.message-box').append('<div class="alert alert-success" role="alert">Your submission has been processed!</div>');
+    }
 });
 
 
 
-// jQuery('.mailing-form').on('submit', function (e) {
+// $('.mailing-form').on('submit', function (e) {
 //     e.preventDefault();
 // })
