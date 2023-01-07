@@ -38,7 +38,7 @@ export default function Home() {
               <li>
                 <a
                   className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
-                  href="CV.pdf" target="_blank"
+                  href="CV.pdf" target="_blank" rel="noreferrer"
                 >
                   Resume
                 </a>
@@ -56,8 +56,8 @@ export default function Home() {
               Freelancer providing services for programming and devops needs. Find out more about me and my projects!
             </p>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
-              <a href="https://github.com/kamreo" target="_blank"><AiFillGithub/></a>
-              <a href="https://pl.linkedin.com/in/kamil-jonak-650b58178" target="_blank"><AiFillLinkedin/></a>
+              <a href="https://github.com/kamreo" target="_blank" rel="noreferrer"><AiFillGithub/></a>
+              <a href="https://pl.linkedin.com/in/kamil-jonak-650b58178" target="_blank" rel="noreferrer"><AiFillLinkedin/></a>
             </div>
             <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
               <Image src={deved} layout="fill" objectFit="cover" />
@@ -127,7 +127,7 @@ export default function Home() {
           <div>
             <h3 className="text-3xl py-1 dark:text-white ">Portofolio</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              I completed a lot of projects on my university and in my working experience. You can check them out <span className="text-teal-500"> <a href="https://github.com/kamreo" target="_blank" >here.</a> </span>
+              I completed a lot of projects on my university and in my working experience. You can check them out <span className="text-teal-500"> <a href="https://github.com/kamreo" rel="noreferrer" target="_blank" >here.</a> </span>
             </p>
           </div>
         </section>
