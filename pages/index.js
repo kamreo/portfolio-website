@@ -2,7 +2,6 @@ import Head from "next/head";
 import {
   AiFillGithub,
   AiFillLinkedin,
-  AiFillYoutube,
 } from "react-icons/ai";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { useState } from "react";
@@ -11,8 +10,7 @@ import code from "../public/code.png";
 import cicd from "../public/cicd.png";
 import server from "../public/data-server.png";
 import Image from "next/image";
-import web1 from "../public/web1.png";
-import web2 from "../public/web2.png";
+
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
