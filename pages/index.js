@@ -5,11 +5,13 @@ import {
 } from "react-icons/ai";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { useState } from "react";
-import deved from "../public/kamreo-pose.png";
+import kamreo from "../public/kamreo-pose.png";
 import code from "../public/code.png";
 import cicd from "../public/cicd.png";
 import server from "../public/data-server.png";
 import Image from "next/image";
+import { motion } from "framer-motion";
+import ContactForm from "../components/ContactForm";
 
 
 export default function Home() {
@@ -44,21 +46,31 @@ export default function Home() {
             </ul>
           </nav>
           <div className="text-center p-10 py-10">
-            <h2 className="text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-6xl">
-              Kamil Jonak
-            </h2>
-            <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
-              Software Engineer and DevOps.
-            </h3>
+          <motion.h2
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 2 }}
+            className="text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-6xl"
+          >
+            Kamil Jonak
+          </motion.h2>
+          <motion.h3
+           initial={{ opacity: 0 }}
+           animate={{ opacity: 1 }}
+           transition={{ duration: 4 }}
+           className="text-2xl py-2 dark:text-white md:text-3xl"
+          >
+             Software Developer and DevOps.
+          </motion.h3>
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
-              Freelancer providing services for programming and devops needs. Find out more about me and my projects!
+              Developer providing services for programming and devops needs. Find out more about me and my projects!
             </p>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
-              <a href="https://github.com/kamreo" target="_blank" rel="noreferrer"><AiFillGithub/></a>
-              <a href="https://pl.linkedin.com/in/kamil-jonak-650b58178" target="_blank" rel="noreferrer"><AiFillLinkedin/></a>
+              <a href="https://github.com/kamreo" target="_blank" rel="noreferrer"><AiFillGithub className="hover:text-teal-500"/></a>
+              <a href="https://pl.linkedin.com/in/kamil-jonak-650b58178" target="_blank" rel="noreferrer"><AiFillLinkedin className="hover:text-teal-500"/></a>
             </div>
-            <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
-              <Image src={deved} layout="fill" objectFit="cover" />
+            <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-48 h-48 md:w-96 md:h-96 relative overflow-hidden mt-20">
+              <Image src={kamreo} layout="fill" objectFit="cover" />
             </div>
           </div>
         </section>
@@ -66,15 +78,14 @@ export default function Home() {
           <div>
             <h3 className="text-3xl py-1 dark:text-white ">Services I offer</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              Since the beginning of my journey as a freelance designer and
-              developer, I&quot;ve done remote work for
+              Since the beginning of my journey as a developer, I&quot;ve done remote work for
               <span className="text-teal-500"> agencies </span>
               consulted for <span className="text-teal-500">startups </span>
               and collaborated with talanted people to create digital products
               for both business and consumer use.
             </p>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              I offer from a wide range of services, including
+              I offer a wide range of services, including
               backend programming, CI/CD pipelines creation and server infrastructure administration.
             </p>
           </div>
@@ -127,6 +138,10 @@ export default function Home() {
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               I completed a lot of projects on my university and in my working experience. You can check them out <span className="text-teal-500"> <a href="https://github.com/kamreo" rel="noreferrer" target="_blank" >here.</a> </span>
             </p>
+          </div>
+          <div className="py-10">
+            <h3 className="text-3xl py-1 dark:text-white">Contact Me</h3>
+            <ContactForm />
           </div>
         </section>
       </main>
