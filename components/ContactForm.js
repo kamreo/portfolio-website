@@ -54,7 +54,7 @@ const ContactForm = () => {
         {errors.message && <div className="text-red-500">This field is required</div>}
       </div>
       <button
-        className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 border-none rounded-md"
+        className="bg-gradient-to-r from-cyan-500 to-blue-500 text-white px-4 py-2 border-none rounded-md"
         type="submit"
       >
         Send Message
